@@ -29,7 +29,7 @@ fi
 # Name of the subdirectory (defaults to stable-diffusion-webui)
 if [[ -z "${clone_dir}" ]]
 then
-    clone_dir="stable-diffusion-webui"
+    clone_dir="google"
 fi
 
 # python3 executable
@@ -172,9 +172,9 @@ then
     cd "${clone_dir}"/ || { printf "\e[1m\e[31mERROR: Can't cd to %s/%s/, aborting...\e[0m" "${install_dir}" "${clone_dir}"; exit 1; }
 else
     printf "\n%s\n" "${delimiter}"
-    printf "Clone stable-diffusion-webui"
+    printf "Clone google"
     printf "\n%s\n" "${delimiter}"
-    "${GIT}" clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "${clone_dir}"
+    "${GIT}" clone https://github.com/yahoojbank/google.git ""${clone_dir}""""
     cd "${clone_dir}"/ || { printf "\e[1m\e[31mERROR: Can't cd to %s/%s/, aborting...\e[0m" "${install_dir}" "${clone_dir}"; exit 1; }
 fi
 
